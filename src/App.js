@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.scss';
+import './App.css';
 
 import Navbar from "./components/Navbar/Navbar";
 
@@ -10,14 +10,16 @@ import Contact from "./pages/Contact";
 
 
 class App extends Component {
-  render() {
+  render(){
     return (
       
-      <Router>
-        
-        <Navbar/>
-        
-        <Routes>
+      <Router> 
+
+      <div className="App">
+      <Navbar />  
+      </div>
+
+      <Routes>
           <Route>
             
             <Route path="/Portfolio" element={<Portfolio />} />
@@ -27,10 +29,10 @@ class App extends Component {
             
           </Route>
         </Routes>
-      </Router>
+      </Router> 
+       
     );
   }
 }
-
 
 export default App;
