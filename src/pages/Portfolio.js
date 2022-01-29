@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/portfolio.scss"
+import kalba from "../components/img/kalba1.jpg"
 
 
 const Portfolio = () => {
@@ -12,7 +13,7 @@ const Portfolio = () => {
 	<div class="gallery__column">
 		<a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
-				<img src= "img/kalba1.jpg" alt="Portrait by Jessica Felicio" class="gallery__image"/>
+				<img src= {kalba} alt="Portrait by Jessica Felicio" class="gallery__image"/>
 				<figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
 			</figure>
 		</a>

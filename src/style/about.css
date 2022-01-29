@@ -1,0 +1,93 @@
+.intro {
+    display: flex;
+    height: 100vh; /*means full screen*/
+    background-color: #fff;
+}
+/*Separate website with left side half of the page*/
+.intro-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Separate website with right side other half of the page*/
+.intro-right{
+    flex: 1;
+    position: relative;
+}
+
+
+.intro-left-wrapper{
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-greeting{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.intro-name{
+    font-size: 60px;
+}
+
+.intro-title{
+    height: 50px;
+    overflow: hidden;
+}
+
+/*Wraps words to animate*/
+.intro-title-wrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+/*Allows animation of each word*/
+@keyframes move {
+    25%{
+        transform: translateY(-50px) ;
+    }
+    50%{
+        transform: translateY(-100px) ;
+    }
+    100%{
+        transform: translateY(200px) ;
+    }
+}
+
+.intro-title-item{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+
+}
+
+/*place image infrom of shape and center to liking*/
+.intro-image{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    padding-top: 40px;
+    padding-left: 150px;
+    position: absolute;
+    
+}
+
+
+.i-bg{
+    /*Utilizes clippy to create a shape behind image*/
+    position: absolute;
+    top:100px;
+    left: 50px;
+    background-color: #555;
+    height: 65%;
+    width: 55%;
+    overflow: hidden;
+}
