@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
       <Routes>
           <Route>
             
+            <Route path="/Home" element={<Home/>} />
             <Route path="/Portfolio" element={<Portfolio />} />
             <Route path="/About" element ={<About />}/>
             <Route path="/Contact" element ={<Contact />}/>

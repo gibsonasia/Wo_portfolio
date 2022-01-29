@@ -3,7 +3,7 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: '/',                   //page route
+        url: '/Home',                   //page route
         cName: 'nav-links'          //call via class
     },
     {
