@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+   
+    /* Full height */
+    height: 100%; 
+    width:99vw;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headline{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px;
+    border-color: #fff;
+  }
