@@ -1,108 +1,73 @@
 import React from "react";
 import "../style/portfolio.scss"
 import kalba from "../components/img/kalba1.jpg"
+import mom from "../components/img/mom.png"
+import kalba2 from "../components/img/kalba2.jpg"
+import g1 from "../components/img/g1.jpg"
+import fro from "../components/img/fro.jpg"
+import teame from "../components/img/teame.jpg"
+import clock from "../components/img/clock.jpg"
+import nola from "../components/img/nola.jpg"
+import roof from "../components/img/roof.jpg"
+import sunset from "../components/img/sunset.jpg"
 
 
 const Portfolio = () => {
+	let data = [
+		{
+		id:0,
+		imgSrc: mom,
+		},
+		{
+		id:1,
+		imgSrc: kalba,
+		},
+		{
+		id:2,
+		imgSrc: fro,
+		},
+		{
+		id:3,
+		imgSrc: kalba2,
+		},
+		{
+		id:4,
+		imgSrc: g1,
+		},
+		{
+		id:5,
+		imgSrc: teame,
+		},
+		{
+		id:6,
+		imgSrc: clock,
+		},
+		{
+		id:7,
+		imgSrc: nola,
+		},
+		{
+		id:8,
+		imgSrc: roof,
+		},
+		{
+		id:9,
+		imgSrc: sunset,
+		}
+
+	]
     return(
-        <div>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet"></link>
-    <div class="gallery">
-	<div class="gallery__column">
-		<a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src= {kalba} alt="Portrait by Jessica Felicio" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Oladimeji Odunsi" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="img/mom.png" alt="Portrait by Alex Perez" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
-			</figure>
-		</a>
-	</div>
-	
-	<div class="gallery__column">
-		<a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/AR7aumwKr2s/300x300" alt="Portrait by Noah Buscher" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
-			</figure>
-		</a>
-		
-		<a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/dnL6ZIpht2s/300x300" alt="Portrait by Ivana Cajina" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/tV_1sC603zA/300x500" alt="Portrait by Sam Burriss" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
-			</figure>
-		</a>
-	</div>
-	
-	<div class="gallery__column">
-		<a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="img/mom.png" height={300} width={500} alt="Portrait by Mari Lezhava" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
-			</figure>
-		</a>
-		
-		<a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/NTjSR3zYpsY/300x300" alt="Portrait by Ethan Haddox" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Amir Geshani" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
-			</figure>
-		</a>
-	</div>
-	
-	<div class="gallery__column">
-		<a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/FQhLLehm4dk/300x300" alt="Portrait by Guilian Fremaux" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/OQd9zONSx7s/300x300" alt="Portrait by Jasmin Chew" class="gallery__image"/>
-				<figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
-			</figure>
-		</a>
-		
-		<a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua" class="gallery__image" />
-				<figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
-			</figure>
-		</a>
-	</div>
-</div>
-</div>
+        <>
+		<div className="port-photos">
+			{data.map((item,index) => {
+				return(
+					<div className="photos" key={index}>
+						<img src={item.imgSrc} style={'100%'}/>
+					</div>
+				)
+			})}
+		</div>
+		</>
 
 
     );
