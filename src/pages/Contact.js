@@ -9,14 +9,14 @@ const Contact = () => {
     function sendEmail(e){
         e.preventDefault();
 
-        emailjs.sendForm('{{service_route}}', //email service router here
-        '{{email_template}}', //place template ID here
-        e.target,"{{user_ID}}"); //email ID path here
+        emailjs.sendForm('{{ROUTER_ID}}', //email service router here
+        '{{TEMPLATE_ID}}', //place template ID here
+        e.target,"{{USER_ID_PATH}}"); //email ID path here
     }
     return(
 
         <div className="contact">
-            
+            <h1 className="heading">Lets Connect</h1>
             <div>
             <form id="ls" method="post" action="" onSubmit={sendEmail}>
                 <label for='Name'>Name</label>
